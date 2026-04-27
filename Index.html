@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Libra</title>
+    <link rel="stylesheet" href="../General.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+</head>
+
+<body>
+
+    <div class="box image-fixed">
+        <nav>
+            <div class="nav-container">
+                <!-- Contenedor del Logo -->
+                <a href="/" class="logo">
+                    <img src="./img/Logo_Libra-removebg-preview.png" alt="Vivero Libra Logo">
+                </a>
+                <div class="logo">Vivero Libra</div>
+                <ul>
+                    <li><a href="Index.html">Inicio</a></li>
+                    <li><a href="Galeria.html">Galería</a></li>
+                    <li><a href="Contacto.html">Contacto</a></li>
+                    <li><a href="Carrito.html">Carrito</a></li>
+                </ul>
+        </nav>
+
+        <section id="Inicio">
+            <h2>Que Ofrecemos</h2>
+            <div class="vidrio-contenido">
+                <p>En <strong>Vivero Libra</strong> nos preocupamos por brindar siempre la mejor atención y una amplia
+                    selección de plantas para que pueda crear ese espacio natural que tanto desea.</p>
+
+                <ul class="defaultList">
+                    <li>Árboles nativos.</li>
+                    <li>Arbustos ornamentales.</li>
+                    <li>Plantas tropicales para interior y exterior.</li>
+                    <li>Macetas e insumos de excelente calidad.</li>
+                </ul>
+                <p class="m-text-align-justify"><span style="display: initial;"><br></span></p>
+                <p class="m-text-align-justify"><span style="display: initial;">También contamos con
+                        insumos de excelente calidad.<br></span></p>
+
+                <div class="destacados-container">
+                    <div class="planta-card">
+                        <img src="./img/helechos.jpg" alt="Plantas de Interior">
+                        <div class="planta-info">
+                            <h3>Interior</h3>
+                            <p>Variedad de helechos y potus para darle vida a tu sala.</p>
+                        </div>
+                    </div>
+
+                    <div class="planta-card">
+                        <img src="./img/Exteriores2.webp" alt="Plantas de Exterior">
+                        <div class="planta-info">
+                            <h3>Exterior</h3>
+                            <p>Arbustos y plantines resistentes para decorar tu jardín.</p>
+                        </div>
+                    </div>
+
+                    <div class="planta-card">
+                        <img src="./img/Suculenta 2.webp" alt="Suculentas">
+                        <div class="planta-info">
+                            <h3>Suculentas</h3>
+                            <p>Pequeñas, hermosas y muy fáciles de cuidar.</p>
+                        </div>
+                    </div>
+
+                    <div class="planta-card">
+                        <img src="./img/insumos2.jpg" alt="Insumos">
+                        <div class="planta-info">
+                            <h3>Insumos</h3>
+                            <p>Macetas de diseño y el mejor sustrato para tus plantas.</p>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+        <footer class="footer-vivero">
+            <div class="top-bar-footer">
+                <div class="top-bar-container">
+                    <div class="contact-info">
+                        <i class="far fa-envelope"></i>
+                        <div>
+                            <strong>E-mail:</strong>
+                            <span>vivero.libra@hotmail.com</span>
+                        </div>
+                    </div>
+
+                    <div class="contact-info">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <strong>Dirección:</strong>
+                            <span>Ruta nacional 12, Km...</span>
+                        </div>
+                    </div>
+
+                    <div class="contact-info">
+                        <i class="fas fa-phone-alt"></i>
+                        <div>
+                            <strong>Móvil:</strong>
+                            <span>(0379) 1234567</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                &copy; 2026 Vivero Libra - Todos los derechos reservados
+            </div>
+        </footer>
+
+        <dialog id="modal-galeria">
+            <span class="cerrar-modal">&times;</span>
+            <img id="img-modal" src="" alt="Imagen ampliada">
+        </dialog>
+
+        <script
+            src="./js/script.js">console.log("El carrito actual tiene:", JSON.parse(localStorage.getItem('carrito-vivero')));</script>
+</body>
+
+</html>
